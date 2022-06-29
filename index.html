@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e44fc5fe3.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->    
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item mx-5">
+                        <div class="active" aria-current="page" href="#"><i class="fab fa-instagram m-1"></i>Instagram</div>
+                    </li>
+                </ul>
+                <div class="d-flex me-5">
+                    <button type="button" class="btn btn-success mx-lg-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+                    <div class="dropdown me-5">
+                        <div class="dropdown-toggle m-lg-2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>        
+        <!-- navbar -->
+
+         <!-- modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                    <div class="modal-body">
+                     <i class="fas fa-camera"></i>
+                     <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="modal-footer">
+                     <button type="button" class="btn  btn-outline-secondary"
+                         data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <!-- cuadro de imagenes -->
+        <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fas fa-th"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fas fa-square"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="container-fluid bg-white">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2 " alt="perro">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2 " alt="perro">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2 " alt="perro">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2" alt="perro">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2" alt="perro">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2" alt="perro">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2" alt="perro">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2" alt="perro">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="./imagenes/img2.jpg" class="w-100 mb-2" alt="perro">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- cuadro de imagenes -->
+            <!-- feed -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="container-fluid p-3">
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white">
+                            <div><b>25 likes</b></div>
+                            <div class="parrafos p-2 bg-white">
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem
+                                        ad
+                                        qui
+                                        exercitationem dolorum.
+                                        Rerum nulla dolorem suscipit reprehenderit?</p>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                        adipisci
+                                        commodi?
+                                    </p>
+                                </div>
+                                <div class="iconos-feed d-flex justify-content-between">
+                                    <div class="iconos-left">
+                                        <i class="far fa-heart"></i>
+                                        <input type="text" placeholder="coment...">
+                                    </div>
+                                    <div class="iconos-left">
+                                        <i class="far fa-heart jus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post mt-3">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"><b>25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad qui
+                                exercitationem dolorum.
+                                Rerum nulla dolorem suscipit reprehenderit?</p>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between   ">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between">
+                            <div class="iconos d-flex "> <b> 25 likes</b></div>
+
+                        </div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between ">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"> <b>25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"> <b> 25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"><b> 25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"><b>25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"><b>25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-post">
+                        <div class="heard d-flex justify-content-between bg-white ">
+                            <div class="container-left d-flex">
+                                <div><i class="fab fa-html5"></i></div>
+                                <div class="letras">Html <br>
+                                    Gabriel
+                                </div>
+                            </div>
+                            <div class="container-raigth"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <div class="body-img"><img src="./imagenes/img2.jpg" class="w-100" alt=""></div>
+                        <div class="footer bg-white d-flex justify-content-between"><b>25 likes</b></div>
+                        <div class="parrafos p-2 bg-white">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere voluptatem ad
+                                    qui
+                                    exercitationem dolorum.
+                                    Rerum nulla dolorem suscipit reprehenderit?</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero quasi, voluptatum at culpa distinctio tempore! Hic obcaecati distinctio
+                                    adipisci
+                                    commodi?
+                                </p>
+                            </div>
+                            <div class="iconos-feed d-flex justify-content-between">
+                                <div class="iconos-left">
+                                    <i class="far fa-heart"></i>
+                                    <input type="text" placeholder="coment...">
+                                </div>
+                                <div class="iconos-left">
+                                    <i class="far fa-heart jus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- feed -->
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
